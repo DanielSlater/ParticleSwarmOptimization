@@ -29,11 +29,11 @@ let private update_particle (args : Args) loss_func (particle : Particle) (globa
     let r1 = random.NextDouble()*args.c1
     let r2 = random.NextDouble()*args.c2
 
-    let velocity = (List.map2 (fun w v -> w*v) args.inertia_weight particle.Velocity, // multiple last velocity by inertia weight
-                   List.map2 (fun l p -> r1*(l-p)) particle.Local_best particle.Parameters, //get attraction of local best
-                   List.map2 (fun g p -> r2*(g-p)) global_best_params particle.Parameters)//get attration of global best
-                   |||> List.map3 (fun x y z -> x+y+z)//add the result of these 3 calculations together
-                   |> limit_velocity <| args.max_velocity //limit velocity by max
+    let velocity =    (List.map2 (fun w v -> w*v) args.inertia_weight particle.Velocity, // multiple last velocity by inertia weight
+                       List.map2 (fun l p -> r1*(l-p)) particle.Local_best particle.Parameters, //get attraction of local best
+                       List.map2 (fun g p -> r2*(g-p)) global_best_params particle.Parameters)//get attration of global best
+                       |||> List.map3 (fun x y z -> x+y+z)//add the result of these 3 calculations together
+                        |> limit_velocity <| args.max_velocity //limit velocity by max
 
     let new_parameters = (particle.Parameters, velocity) ||> List.map2 (fun x y -> x + y)
     let new_loss = loss_func new_parameters
@@ -55,7 +55,7 @@ let private update_particles (args : Args) (particles : list<Particle>) (global_
 
 let rec private run_until_stop_condition (args : Args) (particles : list<Particle>) (global_best_params : list<float>) (global_best_loss : float) loss_func iterations_to_run =
     let stop_condition (args : Args) iterations global_best_loss =
-        iterations > 0 || global_best_loss <= args.success_threshold
+        iterations <= 0 || global_best_loss <= args.success_threshold
 
     let (new_particles, new_global_best_params, new_global_best_loss) = update_particles args particles global_best_params global_best_loss loss_func
     let new_iterations_to_run = iterations_to_run - 1
