@@ -50,3 +50,7 @@ ParticleSwarmOptimization_Parallel_2/obj/**
 SpeedTest/bin/**
 SpeedTest/obj/**
 *.suo
+ParticleSwarmOptimization_Parallel_1/obj/Debug/ParticleSwarmOptimization_Parallel_1.dll
+ParticleSwarmOptimization_Parallel_2/bin/Debug/FSharp.Collections.ParallelSeq.dll
+ParticleSwarmOptimization_Parallel_2/bin/Debug/ParticleSwarmOptimization_Parallel_2.dll
+ParticleSwarmOptimization_Parallel_2/bin/Debug/ParticleSwarmOptimization_Parallel_2.XML

@@ -1,0 +1,9 @@
+C:\Users\Daniel\Documents\GitHub\ParticleSwarmOptimization\ParticleSwarmOptimization_Parallel_1\bin\Debug\ParticleSwarmOptimization_Parallel_1.dll.config
+C:\Users\Daniel\Documents\GitHub\ParticleSwarmOptimization\ParticleSwarmOptimization_Parallel_1\bin\Debug\ParticleSwarmOptimization_Parallel_1.XML
+C:\Users\Daniel\Documents\GitHub\ParticleSwarmOptimization\ParticleSwarmOptimization_Parallel_1\bin\Debug\ParticleSwarmOptimization_Parallel_1.dll
+C:\Users\Daniel\Documents\GitHub\ParticleSwarmOptimization\ParticleSwarmOptimization_Parallel_1\bin\Debug\ParticleSwarmOptimization_Parallel_1.pdb
+C:\Users\Daniel\Documents\GitHub\ParticleSwarmOptimization\ParticleSwarmOptimization_Parallel_1\bin\Debug\FSharp.Collections.ParallelSeq.dll
+C:\Users\Daniel\Documents\GitHub\ParticleSwarmOptimization\ParticleSwarmOptimization_Parallel_1\bin\Debug\FSharp.Core.dll
+C:\Users\Daniel\Documents\GitHub\ParticleSwarmOptimization\ParticleSwarmOptimization_Parallel_1\bin\Debug\FSharp.Core.xml
+C:\Users\Daniel\Documents\GitHub\ParticleSwarmOptimization\ParticleSwarmOptimization_Parallel_1\obj\Debug\ParticleSwarmOptimization_Parallel_1.dll
+C:\Users\Daniel\Documents\GitHub\ParticleSwarmOptimization\ParticleSwarmOptimization_Parallel_1\obj\Debug\ParticleSwarmOptimization_Parallel_1.pdb
